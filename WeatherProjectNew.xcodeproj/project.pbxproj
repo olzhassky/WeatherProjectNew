@@ -10,12 +10,15 @@
 		6334F48B2ABF192D00982449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F48A2ABF192D00982449 /* AppDelegate.swift */; };
 		6334F48D2ABF192D00982449 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F48C2ABF192D00982449 /* SceneDelegate.swift */; };
 		6334F48F2ABF192D00982449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F48E2ABF192D00982449 /* ViewController.swift */; };
-		6334F4922ABF192D00982449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6334F4902ABF192D00982449 /* Main.storyboard */; };
 		6334F4942ABF192E00982449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6334F4932ABF192E00982449 /* Assets.xcassets */; };
 		6334F4972ABF192E00982449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6334F4952ABF192E00982449 /* LaunchScreen.storyboard */; };
 		6334F4A22ABF192E00982449 /* WeatherProjectNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F4A12ABF192E00982449 /* WeatherProjectNewTests.swift */; };
 		6334F4AC2ABF192E00982449 /* WeatherProjectNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F4AB2ABF192E00982449 /* WeatherProjectNewUITests.swift */; };
 		6334F4AE2ABF192E00982449 /* WeatherProjectNewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F4AD2ABF192E00982449 /* WeatherProjectNewUITestsLaunchTests.swift */; };
+		6334F4C02ABF19A300982449 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6334F4BF2ABF19A300982449 /* SnapKit */; };
+		6334F4C32ABF19AD00982449 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6334F4C22ABF19AD00982449 /* Alamofire */; };
+		6334F4C52ABF19C600982449 /* WeatherStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F4C42ABF19C600982449 /* WeatherStruct.swift */; };
+		6334F4C72ABF19E800982449 /* CollectionViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334F4C62ABF19E800982449 /* CollectionViewClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		6334F48A2ABF192D00982449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6334F48C2ABF192D00982449 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6334F48E2ABF192D00982449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6334F4912ABF192D00982449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6334F4932ABF192E00982449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6334F4962ABF192E00982449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6334F4982ABF192E00982449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		6334F4A72ABF192E00982449 /* WeatherProjectNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherProjectNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6334F4AB2ABF192E00982449 /* WeatherProjectNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProjectNewUITests.swift; sourceTree = "<group>"; };
 		6334F4AD2ABF192E00982449 /* WeatherProjectNewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProjectNewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6334F4C42ABF19C600982449 /* WeatherStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStruct.swift; sourceTree = "<group>"; };
+		6334F4C62ABF19E800982449 /* CollectionViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6334F4C02ABF19A300982449 /* SnapKit in Frameworks */,
+				6334F4C32ABF19AD00982449 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +107,9 @@
 			children = (
 				6334F48A2ABF192D00982449 /* AppDelegate.swift */,
 				6334F48C2ABF192D00982449 /* SceneDelegate.swift */,
+				6334F4C62ABF19E800982449 /* CollectionViewClass.swift */,
 				6334F48E2ABF192D00982449 /* ViewController.swift */,
-				6334F4902ABF192D00982449 /* Main.storyboard */,
+				6334F4C42ABF19C600982449 /* WeatherStruct.swift */,
 				6334F4932ABF192E00982449 /* Assets.xcassets */,
 				6334F4952ABF192E00982449 /* LaunchScreen.storyboard */,
 				6334F4982ABF192E00982449 /* Info.plist */,
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = WeatherProjectNew;
+			packageProductDependencies = (
+				6334F4BF2ABF19A300982449 /* SnapKit */,
+				6334F4C22ABF19AD00982449 /* Alamofire */,
+			);
 			productName = WeatherProjectNew;
 			productReference = 6334F4872ABF192D00982449 /* WeatherProjectNew.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,10 @@
 				Base,
 			);
 			mainGroup = 6334F47E2ABF192D00982449;
+			packageReferences = (
+				6334F4BE2ABF19A300982449 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6334F4C12ABF19AD00982449 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6334F4882ABF192D00982449 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +248,6 @@
 			files = (
 				6334F4972ABF192E00982449 /* LaunchScreen.storyboard in Resources */,
 				6334F4942ABF192E00982449 /* Assets.xcassets in Resources */,
-				6334F4922ABF192D00982449 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6334F48F2ABF192D00982449 /* ViewController.swift in Sources */,
+				6334F4C72ABF19E800982449 /* CollectionViewClass.swift in Sources */,
 				6334F48B2ABF192D00982449 /* AppDelegate.swift in Sources */,
 				6334F48D2ABF192D00982449 /* SceneDelegate.swift in Sources */,
+				6334F4C52ABF19C600982449 /* WeatherStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6334F4902ABF192D00982449 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6334F4912ABF192D00982449 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6334F4952ABF192E00982449 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +454,6 @@
 				INFOPLIST_FILE = WeatherProjectNew/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +480,6 @@
 				INFOPLIST_FILE = WeatherProjectNew/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +607,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6334F4BE2ABF19A300982449 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		6334F4C12ABF19AD00982449 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6334F4BF2ABF19A300982449 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6334F4BE2ABF19A300982449 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		6334F4C22ABF19AD00982449 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6334F4C12ABF19AD00982449 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6334F47F2ABF192D00982449 /* Project object */;
 }
