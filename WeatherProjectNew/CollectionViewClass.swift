@@ -29,7 +29,7 @@ class DailyCell: UICollectionViewCell {
         stack.axis = .vertical
         return stack
     }()
-    let lightBlueColor = UIColor.systemBlue.withAlphaComponent(0.7)
+    let lightBlueColor = UIColor.systemBlue.withAlphaComponent(0.99)
 
     
     override init(frame: CGRect) {
@@ -54,7 +54,7 @@ class DailyCell: UICollectionViewCell {
         }
         let temperatureInKelvin = forecast.temp.day
         let temperatureInCelsius = temperatureInKelvin - 273.15
-        let formattedTemperature = String(format: "%.2f°C", temperatureInCelsius)
+        let formattedTemperature = String(format: "%.1f°C", temperatureInCelsius)
         weatherLabel.text = formattedTemperature
     }
     override func prepareForReuse() {
@@ -68,6 +68,7 @@ class DailyCell: UICollectionViewCell {
 private extension DailyCell {
     func setupCell() {
         contentView.backgroundColor = lightBlueColor
+        contentView.layer.cornerRadius = 16
         stackView.addArrangedSubview(dailyLabel)
         stackView.addArrangedSubview(weatherLabel)
         contentView.addSubview(stackView)

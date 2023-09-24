@@ -56,8 +56,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate  {
         collection.dataSource = self
         collection.delegate = self
         collection.register(DailyCell.self, forCellWithReuseIdentifier: DailyCell.reuseIdentifier)
-        collection.layer.cornerRadius = 10
-        collection.clipsToBounds = true
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
@@ -112,7 +110,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate  {
         case "few clouds", "scattered clouds", "broken clouds":
             return "cloud"
         case "light rain", "moderate rain", "heavy rain":
-            return "rai"
+            return "rain"
         default:
             return "default"
         }
